@@ -4,65 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery </title>
+    <title>Food Delivery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Updated FontAwesome link to a working version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Header part  -->
+    <!-- Header part -->
     <header>
         <nav class="navbar flex between wrapper">
             <a href="#" class="logo">Foodie</a>
 
             <!-- DESKTOP MENU -->
-            <ul class="navlist flex gap-3"> 
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">About us</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                </li>
+            <ul class="navlist flex gap-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
 
-            <!-- MOBILE MENU -->
+            <!-- MOBILE MENU (Hidden by default) -->
             <ul class="mobile-menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">About us</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
                 <li>
                     <a href="#" class="btn">
                         Sign In
-                        &nbsp; <!--this is for space in button (arrow or sign in name) -->
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
                     </a>
                 </li>
             </ul>
 
-            <div class="desktop-action flex gap-2">
+            <div class="desktop-action flex ">
                 <a href="#" class="cart-icon">
                     <i class="fa-solid fa-bag-shopping"></i>
                     <span class="cart-value">0</span>
@@ -70,7 +48,6 @@
 
                 <a href="#" class="btn">
                     Sign In
-                    &nbsp; <!--this is for space in button (arrow or sign in name) -->
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
 
@@ -84,43 +61,138 @@
     <!-- Section part -->
     <main>
         <section>
-        <div class="hero-section flex">
-            <div class="content">
-                <h1>Enjoy Your Delicious
-                    <span>Food</span>
-                </h1>
-                <p class="para">
-                    We will fill your tummy with delicious meals delivered <br>
-                     hot and fresh to your doorstep.
-                </p>
-                <div class="">
-                    <a href="#" class="btn">Order Now</a>
-                    <a href="#" class="social-icon">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fa-brands fa-instagram"></i></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fa-brands fa-x-twitter"></i></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fa-brands fa-google"></i></i>
-                    </a>
+            <div class="hero-section flex">
+                <div class="content">
+                    <h1>Enjoy Your Delicious <br>
+                        <span>Food</span>
+                    </h1>
+                    <p class="para">
+                        We will fill your tummy with delicious meals delivered <br>
+                        hot and fresh to your doorstep.
+                    </p>
+                    <div class="social-icons-container">
+                        <a href="#" class="btn">Order Now</a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img src="images/delivery-boy.png" alt="Delivery Boy Image">
                 </div>
             </div>
+        </section>
 
-            <div class="image-container">
-                <img src="images/delivery-boy.png" alt="Delivery Boy Image">
+        <section>
+            <div class="wrapper p-top">
+                <div class="text-center">
+                    <h5>Our Services</h5>
+                    <h2>How Does It Work?</h2>
+                </div>
+
+                <div class="flex text-center">
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/easy-to-order.png" alt="">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p>You only need a few clicks to place your order.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/best-quality.png" alt="">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p>We use only the freshest ingredients to make our dishes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="images-container">
+                            <img src="images/fast-delivery.png" alt="">
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>We deliver your order quickly and efficiently.</p>
+                    </div>
+                </div>
             </div>
-        </div>
         </section>
     </main>
 
-    <!-- footer part  -->
-    <footer>
+    <!-- footer part -->
+     <footer class="footer">
 
-    </footer>
+    <div class="wrapper footer-top">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+            <h2 class="footer-logo">Foodie</h2>
+            <p class="center">
+                Delicious meals delivered fresh to your doorstep.
+                Order your favorite food anytime with fast delivery.
+            </p>
+
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Pune, India</p>
+            <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+            <p><i class="fa-solid fa-envelope"></i> foodie@email.com</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+            <h3>Subscribe</h3>
+            <p>Get updates on new dishes and offers.</p>
+
+            <div class="newsletter-box">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+
+            <div class="app-download">
+                <p>Download App</p>
+                <div class="app-buttons">
+                    <img src="images/playstore.png" alt="">
+                    <img src="images/appstore.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
