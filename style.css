@@ -183,6 +183,10 @@ img {
     margin-left: 10px;
 }
 
+.content h1{
+    font-size: 4rem;
+}
+
 .image-container {
     flex: 1;
     display: flex;
@@ -439,6 +443,10 @@ background:var(--lead)
         height:180px;
     }
 
+    .content h1{
+    font-size: 2rem;
+}
+
 }
 
 
@@ -485,6 +493,10 @@ background:var(--lead)
     .cart-btn{
         width:100%;
     }
+
+    .content h1{
+    font-size: 2rem;
+}
 
 }
     /* This class is added via JS to show the menu */
