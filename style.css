@@ -318,10 +318,13 @@ background:var(--eye-ball)
 }
 
 .food-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:2rem;
-margin-top:50px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:2rem;
+  margin-top:50px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .food-card{
@@ -345,6 +348,9 @@ height:200px;
 object-fit:cover;
 display:block;
 margin:auto;
+filter: drop-shadow(
+    black 0 5px 5px
+);
 }
 
 .food-info{
@@ -469,34 +475,51 @@ background:var(--lead)
         z-index: 1000;
     }
 
-    /* FOOD MENU RESPONSIVE (MOBILE) */
+ /* FOOD MENU RESPONSIVE (MOBILE) */
 
-    .food-grid{
-        grid-template-columns: 1fr;
-        gap: 1.2rem;
-    }
+/* MOBILE */
 
-    .food-card{
-        max-width: 300px;
-        margin: auto;
-    }
+.food-grid{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
 
-    .food-info{
-        text-align:center;
-    }
+.food-card{
+    width: 100%;
+}
 
-    .food-bottom{
-        flex-direction: column;
-        gap:10px;
-    }
+.food-info{
+    text-align: center;
+}
 
-    .cart-btn{
-        width:100%;
-    }
+.food-bottom{
+    flex-direction: column;
+    gap: 10px;
+}
 
-    .content h1{
+.cart-btn{
+    width: 100%;
+}
+
+.content h1{
     font-size: 2rem;
 }
+
+.food-card img{
+    height: 140px;
+    object-fit: cover;
+}
+
+.food-card h3{
+    font-size: 1rem;
+}
+
+.food-card p{
+    font-size: 0.5rem;
+}
+
+.food-card .hide{
+    display: none;
 
 }
     /* This class is added via JS to show the menu */
