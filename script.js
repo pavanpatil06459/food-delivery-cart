@@ -1,15 +1,83 @@
-const cartButtons = document.querySelectorAll(".cart-btn")
-const cartValue = document.querySelector(".cart-value")
+const foods = [
+  {
+    name: "Chicken Burger",
+    image: "images/burger.png",
+    price: 199,
+    desc: "Juicy grilled chicken burger with cheese."
+  },
+  {
+    name: "Cheese Pizza",
+    image: "images/pizza.png",
+    price: 299,
+    desc: "Fresh oven baked pizza with mozzarella."
+  },
+  {
+    name: "Chicken Roll",
+    image: "images/chicken-roll.png",
+    price: 249,
+    desc: "Delicious chicken roll with fresh vegetables."
+  },
+  {
+    name: "Veg Sandwich",
+    image: "images/sandwich.png",
+    price: 149,
+    desc: "Healthy grilled sandwich with veggies."
+  },
+  {
+    name: "Spring Roll",
+    image: "images/spring-roll.png",
+    price: 149,
+    desc: "Crispy spring rolls filled with veggies."
+  },
+  {
+    name: "Spaghetti",
+    image: "images/spaghetti.png",
+    price: 149,
+    desc: "Delicious spaghetti with your choice of sauce."
+  },
+  {
+    name: "Lasagna",
+    image: "images/lasagna.png",
+    price: 149,
+    desc: "Delicious layered pasta with cheese and sauce."
+  },
+  {
+    name: "Fried Chicken",
+    image: "images/fried-chicken.png",
+    price: 149,
+    desc: "Crispy fried chicken with your choice of sauce."
+  }
+];
 
-let count = 0
+const foodGrid = document.getElementById("foodGrid");
 
-cartButtons.forEach(button => {
+foods.forEach(food => {
 
-button.addEventListener("click", () => {
+  const card = document.createElement("div");
+  card.classList.add("food-card");
 
-count++
-cartValue.innerText = count
+  card.innerHTML = `
+    <img src="${food.image}" alt="${food.name}">
+    
+    <div class="food-info">
 
-})
+      <h3>${food.name}</h3>
 
-})
+      <p class="hide">${food.desc}</p>
+
+      <div class="food-bottom">
+
+        <span class="price">₹${food.price}</span>
+
+        <button class="cart-btn" data-name="${food.name}">
+          Add to Cart
+        </button>
+
+      </div>
+
+    </div>
+  `;
+
+  foodGrid.appendChild(card);
+
+});
