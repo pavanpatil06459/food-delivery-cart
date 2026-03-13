@@ -1,3 +1,5 @@
+// Add Food Items to the Menu
+
 const foods = [
   {
     name: "Chicken Burger",
@@ -80,4 +82,13 @@ foods.forEach(food => {
 
   foodGrid.appendChild(card);
 
+});
+
+
+// hamburger toggle for mobile menu
+const hamburger = document.querySelector(".hamburger");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
 });
