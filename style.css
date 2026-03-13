@@ -155,10 +155,10 @@ img {
     line-height: 20px;
 }
 
-.desktop-action .hamburger {
-    font-size: 1.5rem;
-    display: none;
-    cursor: pointer;
+.hamburger{
+    font-size:1.5rem;
+    display:none;
+    cursor:pointer;
 }
 
 .mobile-menu {
@@ -401,6 +401,10 @@ background:var(--lead)
         display: none;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     .desktop-action .hamburger {
         display: block;
     }
@@ -522,28 +526,5 @@ background:var(--lead)
     display: none;
 
 }
-    /* This class is added via JS to show the menu */
-    .mobile-menu.active {
-        display: flex;
-    }
-
-    .content {
-        align-items: center;
-        text-align: center;
-    }
-
-    .social-icons-container {
-        justify-content: center;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    .hamburger {
-        padding: 0 1rem;
-    }
-
-    .text-center h2{
-        font-size: 2rem;
-    }
+   
+}
