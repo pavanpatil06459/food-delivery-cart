@@ -28,25 +28,25 @@ const foods = [
   {
     name: "Spring Roll",
     image: "images/spring-roll.png",
-    price: 149,
+    price: 99,
     desc: "Crispy spring rolls filled with veggies."
   },
   {
     name: "Spaghetti",
     image: "images/spaghetti.png",
-    price: 149,
+    price: 199,
     desc: "Delicious spaghetti with your choice of sauce."
   },
   {
     name: "Lasagna",
     image: "images/lasagna.png",
-    price: 149,
+    price: 249,
     desc: "Delicious layered pasta with cheese and sauce."
   },
   {
     name: "Fried Chicken",
     image: "images/fried-chicken.png",
-    price: 149,
+    price: 299,
     desc: "Crispy fried chicken with your choice of sauce."
   }
 ];
@@ -110,3 +110,79 @@ document.addEventListener("click", (e) => {
   }
 
 });
+
+
+//Slider for reviews
+const reviews = document.querySelectorAll(".review");
+const nextBtn = document.getElementById("next");
+const prevBtn = document.getElementById("prev");
+
+let index = 0;
+
+function showReview(i){
+
+reviews.forEach((review)=>{
+review.classList.remove("active");
+});
+
+reviews[i].classList.add("active");
+
+}
+
+nextBtn.addEventListener("click",()=>{
+
+index++;
+
+if(index >= reviews.length){
+index = 0;
+}
+
+showReview(index);
+
+});
+
+prevBtn.addEventListener("click",()=>{
+
+index--;
+
+if(index < 0){
+index = reviews.length - 1;
+}
+
+showReview(index);
+
+});
+
+
+// AUTO SLIDE
+
+// setInterval(()=>{
+
+// index++;
+
+// if(index >= reviews.length){
+// index = 0;
+// }
+
+// showReview(index);
+
+// },3000);
+
+
+// bounce effct for add to cart button
+
+const buttons = document.querySelectorAll(".cart-btn");
+
+buttons.forEach(btn=>{
+btn.addEventListener("click",()=>{
+
+btn.classList.add("bounce");
+
+setTimeout(()=>{
+btn.classList.remove("bounce");
+},400);
+
+});
+});
+
+
