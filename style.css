@@ -220,6 +220,13 @@ p {
     max-width: 520px;
 }
 
+    /* section 04 styling */
+     .app-container .content h2 {
+        font-size: 3rem;
+        padding-top: 10px;
+
+    }
+
 /* Social Icons */
 .social-icons-container {
     display: flex;
@@ -278,6 +285,7 @@ h3 {
 
 }
 
+
 /* Service Card */
 .service-card {
     width: 280px;
@@ -286,6 +294,8 @@ h3 {
     background: #fff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     transition: 0.3s ease;
+    border-top: 2px solid var(--gold-finger);
+    border-bottom: 2px solid var(--gold-finger);
 }
 
 .service-card:hover {
@@ -377,7 +387,7 @@ h3 {
     border: none;
     background: var(--gold-finger);
     color: var(--pure-white);
-    border-radius: 25% 1%;
+    border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -462,7 +472,52 @@ h3 {
 }
 
 
+/* section 04 */
 
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2rem 0;
+    margin-top: 90px;
+    background: var(--hint-yellow);
+    border-radius: 30px;
+}
+
+.app-container img {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+/* floating effect */
+.app-image img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* text boder to h5  */
+
+.text-center h5 {
+    border-bottom: solid 2px var(--gold-finger);
+    display:inline-block;
+    padding-bottom:4px;
+}
 
 /* Responsive Design */
 
@@ -632,6 +687,13 @@ h3 {
         background: var(--lead);
     }
 
+    /* section 04 styling */
+
+    .app-container img {
+        max-width: 300px;
+        margin-left: 25px;
+
+    }
 
 }
 
@@ -673,9 +735,20 @@ h3 {
 
     }
 
+
+    /* Heading font size styling  */
+    .text-center h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-section .text-center h2 {
+        font-size: 1.8rem;
+    }
+
     .mobile-menu.active {
         transform: translate(-50%, 0);
     }
+    
 
     /* FOOD MENU RESPONSIVE (MOBILE) */
 
@@ -750,7 +823,7 @@ h3 {
     }
 
     .image-container img {
-        max-width: 250px;
+        max-width: 300px;
     }
 
     .review-slider {
@@ -778,6 +851,8 @@ h3 {
 
     .content h2 {
         text-align: center;
+        font-size: 1.8rem;
+        margin-left: 70px;
     }
 
     /* SECTION 03 STYLING */
@@ -830,6 +905,54 @@ h3 {
 
     .slider-buttons button:hover {
         background: var(--lead);
+    }
+
+    /* section 04 styling */
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        margin-left: 0.3rem;
+
+    }
+
+    .app-container img {
+        max-width: 260px;
+    }
+
+    /* Content center */
+    .app-container .content {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Headings */
+    .app-container .content h5,
+    .app-container .content h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .app-container .content h2 {
+        font-size: 1.5rem;
+        padding-top: 10px;
+
+    }
+
+    /* Paragraph */
+    .app-container .para {
+        font-size: 0.95rem;
+        max-width: 90%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    /* Button */
+    .app-container .btn {
+        display: block;
+        margin: 20px auto;
     }
 
 }
