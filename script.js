@@ -58,7 +58,7 @@ foods.forEach(food => {
   const card = document.createElement("div");
   card.classList.add("food-card");
 
-  card.innerHTML = `
+  card.innerHTML = `  
     <img src="${food.image}" alt="${food.name}">
     
     <div class="food-info">
