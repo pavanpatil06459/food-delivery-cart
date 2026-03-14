@@ -340,7 +340,7 @@ h3 {
 .food-card {
     background: white;
     border: 0.2rem solid var(--gold-finger);
-    border-radius: 18% 1% 10% 1%;
+    border-radius: 20% 5%;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
