@@ -197,8 +197,5 @@ cartIcon.addEventListener("click", (e) => {
     cartTab.classList.toggle("active");
 });
 
-
-closeCart.addEventListener("click", (e) => {
-    e.preventDefault();
-    cartTab.classList.remove("active");
-});
+// Close Cart - Tab 
+closeCart.addEventListener("click", () => cartTab.classList.remove("active"));
