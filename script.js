@@ -188,11 +188,17 @@ btn.classList.remove("bounce");
 
 
 // This is for show cart on window (toggle)
-const cartIcon = document.getElementById("cartIcon");
-const cartTab = document.getElementById("cartTab");
+const cartIcon = document.querySelector(".cart-icon");
+const cartTab = document.querySelector(".cart-tab");
+const closeCart = document.getElementById("close-btn")
 
-cartIcon.addEventListener("click", () => {
-    cartTab.classList.add("active");
-    console.log("dont open");
-    
+cartIcon.addEventListener("click", (e) => {
+    e.preventDefault(); // stop page refresh
+    cartTab.classList.toggle("active");
+});
+
+
+closeCart.addEventListener("click", (e) => {
+    e.preventDefault();
+    cartTab.classList.remove("active");
 });
