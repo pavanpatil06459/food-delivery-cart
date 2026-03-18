@@ -186,3 +186,13 @@ btn.classList.remove("bounce");
 });
 
 
+
+// This is for show cart on window (toggle)
+const cartIcon = document.getElementById("cartIcon");
+const cartTab = document.getElementById("cartTab");
+
+cartIcon.addEventListener("click", () => {
+    cartTab.classList.add("active");
+    console.log("dont open");
+    
+});
