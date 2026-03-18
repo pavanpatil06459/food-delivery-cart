@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    border: solid 1px red;
+    /* border: solid 1px red; */
 }
 
 :root {
@@ -27,7 +27,7 @@ a {
     color: var(--lead);
 }
 
-.mt-one-half{
+.mt-one-half {
     margin-top: 1.5rem;
 }
 
@@ -405,6 +405,93 @@ h3 {
     background: var(--lead)
 }
 
+
+/* CART TAB  */
+.cart-tab {
+    background: var(--hint-yellow);
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: 25rem;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-list {
+    flex: 1;
+    width: 100%;
+    margin-top: 1.5rem;
+    overflow: auto;
+}
+
+.cart-list::-webkit-scrollbar{
+    width: 0;
+}
+
+.total-container{
+    width: 100%;
+    background: var(--gold-finger);
+    text-align: center;
+    margin-block: 1rem;
+    padding-block: 1rem;
+}
+
+.total-container h4{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.btn-container .btn{
+    background: var(--lead);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-container .btn:hover{
+    background: var(--gold-finger);
+    color: var(--lead);
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .7rem 1rem;
+}
+
+.item .ima-container img{
+    width: 5rem;
+}
+
+.item h4{
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+.item .total-item {
+    font-weight: 400;
+    margin-top: .3rem;
+}
+
+.quantity-btn {
+    background: var(--lead);
+    color: var(--pure-white);
+    width: 1.7rem;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+.quantity-value{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: .6rem;
+}
+
+
 /* Slider */
 
 .review-slider {
@@ -538,7 +625,8 @@ h3 {
     align-items: center;
     gap: 10px;
 
-    margin: 0 auto;   /* 🔥 THIS centers the box */
+    margin: 0 auto;
+    /* 🔥 THIS centers the box */
 }
 
 .center-wrapper {
@@ -551,7 +639,7 @@ h3 {
     margin-top: 8rem;
 }
 
-input[type="email"]{
+input[type="email"] {
     width: 100%;
     padding: .8rem;
     border: none;
@@ -565,40 +653,40 @@ input[type="email"]:focus {
     box-shadow: none;
 }
 
-.newsletter-container .para{
+.newsletter-container .para {
     letter-spacing: 2px;
     font-weight: 500;
-    
+
 }
 
 
 /* Footer styling */
 
-.footer-container{
+.footer-container {
     margin-top: 10rem;
     padding-block: 4rem;
     background: var(--hint-yellow);
 }
 
-.footer-wrapper{
+.footer-wrapper {
     flex: 1;
 }
 
-.footer-wrapper .social-icon{
+.footer-wrapper .social-icon {
     background: var(--pure-white);
 }
 
-.footer-wrapper .social-icon:hover{
+.footer-wrapper .social-icon:hover {
     background: var(--lead);
     color: var(--pure-white);
 }
 
-.footer-link{
+.footer-link {
     color: grey;
     font-size: 1.1rem;
 }
 
-.footer-link:hover{
+.footer-link:hover {
     color: var(--lead);
 }
 
@@ -628,7 +716,8 @@ input[type="email"]:focus {
     background: white;
     transition: 0.3s;
 }
-.footer-bottom .col{
+
+.footer-bottom .col {
     text-align: center;
     background: var(--pure-white);
     color: var(--lead);
@@ -636,15 +725,53 @@ input[type="email"]:focus {
 
 }
 
+.footer-container .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+    /* allow wrap only if needed */
+}
 
 
-/* text underline to h5  */
+
+
+/* footer links hover*/
+.footer-wrapper li a {
+    position: relative;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+.footer-wrapper li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--gold-finger);
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s;
+}
+
+.footer-wrapper li a:hover::after {
+    width: 100%;
+}
+
+
+
+/* text underline to h5 all sections */
 
 .text-center h5 {
     border-bottom: solid 2px var(--gold-finger);
     display: inline-block;
     padding-bottom: 4px;
 }
+
+
 
 /* Responsive Design */
 
@@ -1083,7 +1210,7 @@ input[type="email"]:focus {
     }
 
     /* footer */
-     .flex {
+    footer .flex {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -1093,10 +1220,14 @@ input[type="email"]:focus {
         width: 100%;
     }
 
-    #icon{
+    #footerSocialIcons {
         display: flex;
-        justify-content: center;  /* 🔥 centers icons */
+        justify-content: center;
         align-items: center;
+    }
+
+    .footer-wrapper h3 {
+        margin-top: 3rem;
     }
 
 
