@@ -410,13 +410,20 @@ h3 {
 .cart-tab {
     background: var(--hint-yellow);
     position: fixed;
-    inset: 0 0 0 auto;
+    inset: 0 -500 0 auto;
     width: 25rem;
     padding-block: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 99;
+    box-shadow:
+        rgba(0, 0, 0, 0.301) -10px -10px 20px;
+}
+
+.cart-tab :active{
+    inset: 0 0 0 auto;
 }
 
 .cart-list {
@@ -426,11 +433,15 @@ h3 {
     overflow: auto;
 }
 
-.cart-list::-webkit-scrollbar{
+.cart-list .item:nth-child(even){
+    background: var(--eye-ball);
+}
+
+.cart-list::-webkit-scrollbar {
     width: 0;
 }
 
-.total-container{
+.total-container {
     width: 100%;
     background: var(--gold-finger);
     text-align: center;
@@ -438,34 +449,34 @@ h3 {
     padding-block: 1rem;
 }
 
-.total-container h4{
+.total-container h4 {
     display: inline-block;
     font-size: 1.3rem;
     font-weight: 400;
 }
 
-.btn-container .btn{
+.btn-container .btn {
     background: var(--lead);
     transition: 0.3s ease-in-out;
 }
 
-.btn-container .btn:hover{
+.btn-container .btn:hover {
     background: var(--gold-finger);
     color: var(--lead);
 }
 
-.item{
+.item {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: .7rem 1rem;
 }
 
-.item .ima-container img{
+.item .ima-container img {
     width: 5rem;
 }
 
-.item h4{
+.item h4 {
     font-size: 1.3rem;
     color: var(--lead);
 }
@@ -485,10 +496,14 @@ h3 {
     line-height: 1.7rem;
 }
 
-.quantity-value{
+.quantity-value {
     font-size: 1.2rem;
     font-weight: 400;
     margin-inline: .6rem;
+}
+
+.item .total-item {
+    font-size: 1.1rem;
 }
 
 
