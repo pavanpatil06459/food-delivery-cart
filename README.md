@@ -30,6 +30,9 @@ Users can browse items, manage cart, and see real-time price updates.
 
 ### 🖥 Desktop View
 ![Desktop](Screenshots/Home.png)
+![FoodMenu](<img src = "Screenshots/Food Menu.png">)
+
+
 
 ### 📱 Mobile View
 ![Mobile](screenshots/mobile.png)
