@@ -412,7 +412,7 @@ h3 {
     background: var(--hint-yellow);
     position: fixed;
     top: 0;
-    right: -100%;   /* 🔥 hide outside screen */
+    right: -100%;   /*hide outside screen */
     width: 25rem;
     height: 100vh;
 
@@ -429,7 +429,7 @@ h3 {
 
 /* SHOW CART */
 .cart-tab.active {
-    right: 0;   /* 🔥 bring into screen */
+    right: 0;   /* bring into screen */
 }
 
 
@@ -475,8 +475,13 @@ h3 {
 .item {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: space-between;
     padding: .7rem 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.item.slide-out{
+    transform: translateX(50%)
 }
 
 .item .ima-container img {
@@ -512,6 +517,8 @@ h3 {
 .item .total-item {
     font-size: 1.1rem;
 }
+
+
 
 
 /* Slider */
