@@ -29,8 +29,8 @@ Users can browse items, manage cart, and see real-time price updates.
 ## 📸 Project Screenshots
 
 ### 🖥 Desktop View
-![Desktop](Screenshots/Home.png)
-![FoodMenu](Screenshots/OurReviews.png)
+![Desktop](Screenshots/Home.pg)
+
 
 
 
