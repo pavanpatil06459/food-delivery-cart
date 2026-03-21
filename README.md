@@ -26,6 +26,17 @@ Users can browse items, manage cart, and see real-time price updates.
 
 ---
 
+## 📸 Project Screenshots
+
+### 🖥 Desktop View
+![Desktop](Project Screenshots/Home.png)
+
+### 📱 Mobile View
+![Mobile](screenshots/mobile.png)
+
+
+---
+
 ## ⚙️ How It Works
 
 * Products are stored in a JS array
