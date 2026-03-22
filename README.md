@@ -34,7 +34,7 @@ Users can browse items, manage cart, and see real-time price updates.
 
 
 ### 📱 Mobile View
-![Mobile](Screenshots/Mobileview.jpg)
+<img src="Screenshots/Mobileview.jpg" width="300" />
 
 
 ---
